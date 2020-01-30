@@ -7,13 +7,11 @@ namespace BarracudaSample
 {
     public class TestModel : MonoBehaviour
     {
-        [SerializeField]
-        [Tooltip("学習済みモデルのファイル名 (.nn ファイル)")]
+        [SerializeField, Tooltip("学習済みモデルのファイル名 (.nn ファイル)")]
         // 必ず Assets/StreamingAssets 直下に置くこと.
         private string m_ModelName;
 
-        [SerializeField]
-        [Tooltip("入力する文字画像")]
+        [SerializeField, Tooltip("入力する文字画像")]
         private Texture2D m_InputTexture;
 
         // Start is called before the first frame update
